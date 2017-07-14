@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="task" label="Needit" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element choice="3" default="Break Fix&#13;&#10;Stolen&#13;&#10;Outage" label="cause" max_length="40" name="new_field_2" type="integer">
+            <choice>
+                <element label="Break Fix" value="0"/>
+                <element label="Outage" value="1"/>
+                <element label="Stolen" value="2"/>
+            </choice>
+        </element>
+        <element label="New Date/Time" max_length="40" name="u_glide_date_time_2" type="glide_date_time"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Support Function" max_length="1024" name="u_glide_list_1" type="glide_list"/>
+        <element label="New Journal" max_length="4000" name="u_journal_3" type="journal"/>
+    </element>
+</database>
